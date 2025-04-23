@@ -1,0 +1,188 @@
+/* ClothingItem Styles */
+.ClothingItemContainer {
+    background-color: #e0f2ff; /* Light Indigo Background */
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    transition: transform 0.2s ease; /* Smooth hover effect */
+  }
+  
+  .ClothingItemContainer:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+  }
+  
+  .ClothingItemImage {
+    width: 100px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; /* Smooth focus effect */
+  }
+  
+  .ClothingItemImage:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Hover shadow */
+  }
+
+  /* ShoppingCart Styles */
+.ShoppingCartContainer {
+    border: 2px solid #dedede;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: #333;
+  }
+  
+  .AddToCartButton {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .AddToCartButton:hover {
+    background-color: #45a049;
+  }
+  
+  .CartItemsList {
+    list-style-type: none;
+    padding: 0;
+    margin: 16px 0 0 0;
+  }
+  
+  .CartItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .CartItemIcon {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+  }
+  
+  .EmptyCartMessage {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 12px;
+  }
+
+  .CanvasContainer {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 2px dashed #ccc;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    margin: 20px;
+  }
+  
+  .CanvasItem {
+    position: absolute; /* Allows top and left positioning */
+    cursor: grab;
+    width: 100px; /* Fixed size for items */
+    height: 100px; /* Fixed size for items */
+    background-color: #fff; /* White background for items */
+    border: 2px solid #ccc; /* Border for items */
+    border-radius: 8px; /* Rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 0.2s ease; /* Smooth animations for movement */
+  }
+  
+  .CanvasItem:active {
+    cursor: grabbing;
+  }
+  .eachCanvaItem{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .trigger-button {
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .trigger-button:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Popup modal overlay */
+  .popup-overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Popup modal content */
+  .modal {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .header {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #4caf50; /* Green color for header */
+    font-weight: bolder;
+  }
+  
+  .content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .actions .button {
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .actions .button:hover {
+    background-color: #005bb5;
+  }
+
+  span {
+    font-size: 1.2rem;
+    color: #333;
+  }
